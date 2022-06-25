@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  width: 462px;
+  height: 62px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  svg {
+    cursor: pointer;
+  }
+  img {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+  }
+  div {
+    margin-left: 15px;
+    h1 {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 14px;
+      margin-top: 2px;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      color: gray;
+    }
+  }
+  .hover {
+    position: absolute;
+    width: 462px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    visibility: hidden;
+    div {
+      height: 100%;
+      background-color: #000000;
+      > svg {
+        margin: auto 0;
+        color: gray;
+      }
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &:hover {
+    img {
+      opacity: 0.1;
+    }
+    .hover {
+      visibility: visible;
+    }
+  }
+}
