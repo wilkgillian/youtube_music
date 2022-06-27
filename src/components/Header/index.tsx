@@ -12,13 +12,13 @@ export function Header() {
       <nav className={styles.container}>
         <img src={Logo} alt="youtubemusic" />
         <div className={styles.div}>
-          <Link to="#inicio" activeClass="active" offset={0} duration={500}>
+          <Link to="inicio" activeClass="active" offset={0} duration={500}>
             Inicío
           </Link>
-          <Link to="#today_hits" activeClass="active" offset={0} duration={500}>
+          <Link to="today_hits" activeClass="active" offset={0} duration={500}>
             Explorar
           </Link>
-          <Link to="#top" activeClass="active" offset={0} duration={500}>
+          <Link to="top" activeClass="active" offset={0} duration={500}>
             Biblioteca
           </Link>
           <button type="button">
