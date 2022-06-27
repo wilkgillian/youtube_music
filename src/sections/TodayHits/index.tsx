@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export function TodayHits() {
   return (
-    <div className={styles.container}>
+    <div id="today_hits" className={styles.container}>
       <section className={styles.section}>
         <div className={styles.div}>
           <div>

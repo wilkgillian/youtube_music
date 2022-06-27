@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export function Top() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="top">
       <section className={styles.section}>
         <div className={styles.div}>
           <div>

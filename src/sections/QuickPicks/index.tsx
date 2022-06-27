@@ -1,12 +1,10 @@
 import { RadioMusic } from '../../components/RadioMusic';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import styles from './styles.module.scss';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation'
+
 export function QuickPicks() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="inicio">
       <section className={styles.section}>
         <div className={styles.div}>
           <div>
@@ -22,48 +20,25 @@ export function QuickPicks() {
             </button>
           </div>
         </div>
-        <Swiper>
-          <SwiperSlide>
-            <div className={styles.music}>
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.music}>
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-              <RadioMusic />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+
+        <div className={styles.music}>
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+          <RadioMusic />
+        </div>
       </section>
     </div>
   );

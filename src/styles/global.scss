@@ -6,11 +6,15 @@
 
 html, body{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 } body{
   font-family: 'YouTube sans', Roboto;
   background: #000000;
   color: #ffffff;
   width: 100vw;
+}
+main {
+  padding-top: 4rem;
 }
 ::-webkit-scrollbar{
   width: 0.8rem;

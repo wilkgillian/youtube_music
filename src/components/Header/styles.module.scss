@@ -2,6 +2,8 @@
   width: 100vw;
   height: 4.1rem;
   padding: 1rem;
+  position: fixed;
+  background-color: #000000;
 }
 .container {
   width: 100%;
@@ -25,6 +27,14 @@
   justify-content: space-between;
   font-weight: bold;
   font-size: 20px;
+  &.active {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  &.active::after {
+    content: '';
+    color: #ffffff;
+  }
   a {
     text-decoration: none;
     color: gray;
