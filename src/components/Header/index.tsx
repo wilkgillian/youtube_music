@@ -1,6 +1,7 @@
-import { AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineSearch, AiFillHome } from 'react-icons/ai';
 import { RiCastLine } from 'react-icons/ri';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
+import { MdExplore, MdLibraryMusic } from 'react-icons/md';
 import Logo from '../../assets/youtubemusic.svg';
 import styles from './styles.module.scss';
 
@@ -16,6 +17,13 @@ export function Header() {
           <button type="button">
             <AiOutlineSearch /> Pesquisar
           </button>
+        </div>
+        <div className={styles.responsive_nav}>
+          <a href="#"><AiFillHome /></a>
+          <a href="#"><MdExplore /></a>
+          <a href="#"><MdLibraryMusic /></a>
+          <a href="#"><AiOutlineSearch /></a>
+          <a href="#"><RiCastLine /></a>
         </div>
         <div className={styles.options}>
           <RiCastLine /> <BiDotsVerticalRounded />

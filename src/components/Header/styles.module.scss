@@ -8,6 +8,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1.1fr 1.4fr 1.1fr;
+  padding-right: 1rem;
   img {
     margin: auto 0;
     grid-column: 1;
@@ -17,6 +18,8 @@
 .div {
   grid-column: 2;
   width: 100%;
+  max-width: 510px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,6 +38,7 @@
       margin-right: 20px;
     }
     background-color: transparent;
+    border: none;
     font-weight: bold;
     color: gray;
     font-size: 20px;
@@ -45,6 +49,9 @@
     &:hover {
       color: #ffffff;
     }
+  }
+  @media (max-width: 820px) {
+    display: none;
   }
 }
 .options {
@@ -64,5 +71,28 @@
     border-radius: 3px;
     width: 116px;
     height: 32px;
+  }
+  @media (max-width: 820px){
+    svg:first-child{
+      display: none;
+    }
+  }
+}
+.responsive_nav {
+  display: none;
+}
+@media (max-width: 820px) {
+  .responsive_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    a {
+      text-decoration: none;
+      color: gray;
+      &:hover {
+        color: white;
+      }
+    }
   }
 }

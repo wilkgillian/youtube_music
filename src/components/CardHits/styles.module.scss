@@ -1,16 +1,63 @@
 .container {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  .content {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2px;
     width: 190px;
     height: 190px;
-    border-radius: 5px;
+    .hover {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 95%);
+      height: 100%;
+      width: 100%;
+      visibility: hidden;
+      div {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content: flex-end;
+        div{
+          grid-row: 1;
+          svg {
+            font-size: 30px;
+          }
+        }
+        button {
+          margin-right: 1rem;
+          grid-row: 2;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          transform: scale(1);
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #ffffff;
+          transition: 0.3s;
+          &:hover {
+            background-color: rgba(0, 0, 0, 1);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    &:hover {
+      .hover {
+        // background-color: rgba(0, 0, 0, 0.5);
+        visibility: visible;
+      }
+    }
   }
   div {
+    margin-top: 15px;
     width: 100%;
-    padding-top: 10px;
     text-align: left;
     a {
       text-decoration: none;
@@ -23,7 +70,6 @@
     }
     p {
       width: 100%;
-      height: 35px;
       font-size: 14px;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -34,57 +80,6 @@
       margin-top: 2px;
       font-weight: normal;
       color: gray;
-    }
-  }
-  .hover {
-    position: absolute;
-    width: 190px;
-    height: 190px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    padding: 1rem;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    visibility: hidden;
-    svg {
-      cursor: pointer;
-    }
-    button {
-      cursor: pointer;
-      border: none;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 23px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      transition: 0.2s;
-      &:hover {
-        margin-right: -5px;
-        margin-bottom: -5px;
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-        background-color: rgba(0, 0, 0, 1);
-      }
-    }
-  }
-  &:hover {
-    .hover {
-      margin: auto;
-      width: 190px;
-      height: 190px;
-      background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3) 5%,
-        transparent 95%
-      );
-      visibility: visible;
-      border-radius: inherit;
     }
   }
 }

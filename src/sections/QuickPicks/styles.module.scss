@@ -3,6 +3,9 @@
   max-width: 1478px;
   padding: 2rem 7rem;
   margin: auto;
+  @media (max-width: 820px) {
+    padding: 2rem 0 2rem 3rem; 
+  }
 }
 .section {
   width: 100%;
@@ -12,6 +15,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 820px) {
+      .arrows{
+        margin-right: 4rem;
+      }
+    }
     .arrows {
       display: flex;
       button {
@@ -47,9 +55,14 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   width: 100%;
+  max-width: 1478px;
   display: grid;
+  white-space: nowrap;
   gap: 5px;
   padding: 0.5rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+}
+.music::-webkit-scrollbar{
+  display: none;
 }

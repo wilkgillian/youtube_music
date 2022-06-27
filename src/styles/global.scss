@@ -4,8 +4,19 @@
   box-sizing: border-box;
 }
 
-body {
+html, body{
+  overflow-x: hidden;
+} body{
   font-family: 'YouTube sans', Roboto;
   background: #000000;
   color: #ffffff;
+  width: 100vw;
+}
+::-webkit-scrollbar{
+  width: 0.8rem;
+  background: #1d1d1d;
+  border: 1px solid #333333;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
 }
